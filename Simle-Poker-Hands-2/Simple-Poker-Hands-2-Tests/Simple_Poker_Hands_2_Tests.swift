@@ -20,11 +20,24 @@ class Simple_Poker_Hands_2_Tests: XCTestCase {
         super.tearDown()
     }
     
-    func testHighCardHand() {
+    func testHighCardHand_success() {
         let cards = ["2C","4H","9D","QH","AD"]
         
         let highCardFinder = HighCardFinder()
         XCTAssertTrue(highCardFinder.find(cards))
     }
     
+    func testPairFinder_success() {
+        let cards = ["2C","2H","9D","QH","AD"]
+
+        let pairFinder = PairFinder()
+        XCTAssertTrue(pairFinder.find(cards))
+    }
+    
+    func testPairFinder_fail() {
+        let cards = ["2C","3H","9D","QH","AD"]
+        
+        let pairFinder = PairFinder()
+        XCTAssertFalse(pairFinder.find(cards))
+    }
 }

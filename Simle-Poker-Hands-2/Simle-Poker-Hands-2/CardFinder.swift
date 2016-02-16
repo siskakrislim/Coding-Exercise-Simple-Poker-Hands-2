@@ -1,5 +1,5 @@
 //
-//  HighCardFinder.swift
+//  CardFinder.swift
 //  Simle-Poker-Hands-2
 //
 //  Created by Bartosz Oczujda on 16/02/16.
@@ -8,10 +8,6 @@
 
 import Foundation
 
-class HighCardFinder: CardFinder {
-    
-    func find(cards:[String]) -> Bool {
-        return true
-    }
-    
+protocol CardFinder {
+    func find(cards:[String]) -> Bool
 }

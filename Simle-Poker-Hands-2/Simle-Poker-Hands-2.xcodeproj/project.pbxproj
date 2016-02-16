@@ -11,6 +11,10 @@
 		CC6632CB1C73D119001C8C14 /* Simple_Poker_Hands_2_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6632CA1C73D119001C8C14 /* Simple_Poker_Hands_2_Tests.swift */; };
 		CC6632D11C73D414001C8C14 /* HighCardFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6632D01C73D414001C8C14 /* HighCardFinder.swift */; };
 		CC6632D21C73D414001C8C14 /* HighCardFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6632D01C73D414001C8C14 /* HighCardFinder.swift */; };
+		CC6632D41C73D917001C8C14 /* PairFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6632D31C73D917001C8C14 /* PairFinder.swift */; };
+		CC6632D51C73D917001C8C14 /* PairFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6632D31C73D917001C8C14 /* PairFinder.swift */; };
+		CC6632D71C73D962001C8C14 /* CardFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6632D61C73D962001C8C14 /* CardFinder.swift */; };
+		CC6632D81C73D962001C8C14 /* CardFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6632D61C73D962001C8C14 /* CardFinder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +36,8 @@
 		CC6632CA1C73D119001C8C14 /* Simple_Poker_Hands_2_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_Poker_Hands_2_Tests.swift; sourceTree = "<group>"; };
 		CC6632CC1C73D119001C8C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC6632D01C73D414001C8C14 /* HighCardFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighCardFinder.swift; sourceTree = "<group>"; };
+		CC6632D31C73D917001C8C14 /* PairFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairFinder.swift; sourceTree = "<group>"; };
+		CC6632D61C73D962001C8C14 /* CardFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardFinder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,8 @@
 			children = (
 				CC4B55B61C67BCAC005ACCB8 /* main.swift */,
 				CC6632D01C73D414001C8C14 /* HighCardFinder.swift */,
+				CC6632D31C73D917001C8C14 /* PairFinder.swift */,
+				CC6632D61C73D962001C8C14 /* CardFinder.swift */,
 			);
 			path = "Simle-Poker-Hands-2";
 			sourceTree = "<group>";
@@ -177,7 +185,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC4B55B71C67BCAC005ACCB8 /* main.swift in Sources */,
+				CC6632D71C73D962001C8C14 /* CardFinder.swift in Sources */,
 				CC6632D11C73D414001C8C14 /* HighCardFinder.swift in Sources */,
+				CC6632D41C73D917001C8C14 /* PairFinder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +196,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC6632CB1C73D119001C8C14 /* Simple_Poker_Hands_2_Tests.swift in Sources */,
+				CC6632D81C73D962001C8C14 /* CardFinder.swift in Sources */,
 				CC6632D21C73D414001C8C14 /* HighCardFinder.swift in Sources */,
+				CC6632D51C73D917001C8C14 /* PairFinder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
