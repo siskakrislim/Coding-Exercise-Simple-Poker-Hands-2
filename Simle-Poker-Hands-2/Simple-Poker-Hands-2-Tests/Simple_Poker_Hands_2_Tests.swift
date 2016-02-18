@@ -40,4 +40,32 @@ class Simple_Poker_Hands_2_Tests: XCTestCase {
         let pairFinder = PairFinder()
         XCTAssertFalse(pairFinder.find(cards))
     }
+    
+    func testThreeOfAKindFinder_success() {
+        let cards = ["2C","2H","2D","QH","AD"]
+
+        let finder = ThreeOfAKindFinder()
+        XCTAssertTrue(finder.find(cards))
+    }
+    
+    func testThreeOfAKindFinder_fail() {
+        let cards = ["2C","5H","2D","QH","AD"]
+        
+        let finder = ThreeOfAKindFinder()
+        XCTAssertFalse(finder.find(cards))
+    }
+    
+    func testFourOfAKindFinder_success() {
+        let cards = ["2C","2H","2D","2S","AD"]
+        
+        let finder = FourOfAKindFinder()
+        XCTAssertTrue(finder.find(cards))
+    }
+    
+    func testFourOfAKindFinder_fail() {
+        let cards = ["2C","2H","2D","4S","AD"]
+        
+        let finder = FourOfAKindFinder()
+        XCTAssertFalse(finder.find(cards))
+    }
 }

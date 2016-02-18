@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC20033B1C7674EB00A53017 /* ThreeOfAKindFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC20033A1C7674EB00A53017 /* ThreeOfAKindFinder.swift */; };
+		CC20033C1C7674EB00A53017 /* ThreeOfAKindFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC20033A1C7674EB00A53017 /* ThreeOfAKindFinder.swift */; };
+		CC20033E1C76761100A53017 /* FourOfAKindFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC20033D1C76761100A53017 /* FourOfAKindFinder.swift */; };
+		CC20033F1C76761100A53017 /* FourOfAKindFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC20033D1C76761100A53017 /* FourOfAKindFinder.swift */; };
 		CC4B55B71C67BCAC005ACCB8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4B55B61C67BCAC005ACCB8 /* main.swift */; };
 		CC6632CB1C73D119001C8C14 /* Simple_Poker_Hands_2_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6632CA1C73D119001C8C14 /* Simple_Poker_Hands_2_Tests.swift */; };
 		CC6632D11C73D414001C8C14 /* HighCardFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6632D01C73D414001C8C14 /* HighCardFinder.swift */; };
@@ -30,6 +34,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CC20033A1C7674EB00A53017 /* ThreeOfAKindFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeOfAKindFinder.swift; sourceTree = "<group>"; };
+		CC20033D1C76761100A53017 /* FourOfAKindFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourOfAKindFinder.swift; sourceTree = "<group>"; };
 		CC4B55B31C67BCAC005ACCB8 /* Simle-Poker-Hands-2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Simle-Poker-Hands-2"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4B55B61C67BCAC005ACCB8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CC6632C81C73D119001C8C14 /* Simple-Poker-Hands-2-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple-Poker-Hands-2-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +89,8 @@
 				CC6632D01C73D414001C8C14 /* HighCardFinder.swift */,
 				CC6632D31C73D917001C8C14 /* PairFinder.swift */,
 				CC6632D61C73D962001C8C14 /* CardFinder.swift */,
+				CC20033A1C7674EB00A53017 /* ThreeOfAKindFinder.swift */,
+				CC20033D1C76761100A53017 /* FourOfAKindFinder.swift */,
 			);
 			path = "Simle-Poker-Hands-2";
 			sourceTree = "<group>";
@@ -188,6 +196,8 @@
 				CC6632D71C73D962001C8C14 /* CardFinder.swift in Sources */,
 				CC6632D11C73D414001C8C14 /* HighCardFinder.swift in Sources */,
 				CC6632D41C73D917001C8C14 /* PairFinder.swift in Sources */,
+				CC20033E1C76761100A53017 /* FourOfAKindFinder.swift in Sources */,
+				CC20033B1C7674EB00A53017 /* ThreeOfAKindFinder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +209,8 @@
 				CC6632D81C73D962001C8C14 /* CardFinder.swift in Sources */,
 				CC6632D21C73D414001C8C14 /* HighCardFinder.swift in Sources */,
 				CC6632D51C73D917001C8C14 /* PairFinder.swift in Sources */,
+				CC20033F1C76761100A53017 /* FourOfAKindFinder.swift in Sources */,
+				CC20033C1C7674EB00A53017 /* ThreeOfAKindFinder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +361,7 @@
 				CC6632CF1C73D119001C8C14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
