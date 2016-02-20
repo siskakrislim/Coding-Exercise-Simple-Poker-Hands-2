@@ -11,15 +11,8 @@ import Foundation
 class PairFinder: CardFinder{
     
     func find(cards:[String]) -> Bool {
-        
-        var filtered = [String]()
-        
-        for card in cards {
-            filtered = cards.filter({ $0.characters.first == card.characters.first })
-            if (filtered.count == length) { return true }
-        }
-        
-        return false
+        let finder = SetFinder()
+        return finder.find(cards, length: length)
     }
     
     var length:Int {

@@ -19,6 +19,8 @@
 		CC6632D51C73D917001C8C14 /* PairFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6632D31C73D917001C8C14 /* PairFinder.swift */; };
 		CC6632D71C73D962001C8C14 /* CardFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6632D61C73D962001C8C14 /* CardFinder.swift */; };
 		CC6632D81C73D962001C8C14 /* CardFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6632D61C73D962001C8C14 /* CardFinder.swift */; };
+		CC8686D31C78E24B008251DA /* SetFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8686D21C78E24B008251DA /* SetFinder.swift */; };
+		CC8686D41C78E24B008251DA /* SetFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8686D21C78E24B008251DA /* SetFinder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +46,7 @@
 		CC6632D01C73D414001C8C14 /* HighCardFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighCardFinder.swift; sourceTree = "<group>"; };
 		CC6632D31C73D917001C8C14 /* PairFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairFinder.swift; sourceTree = "<group>"; };
 		CC6632D61C73D962001C8C14 /* CardFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardFinder.swift; sourceTree = "<group>"; };
+		CC8686D21C78E24B008251DA /* SetFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetFinder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,7 @@
 				CC6632D61C73D962001C8C14 /* CardFinder.swift */,
 				CC20033A1C7674EB00A53017 /* ThreeOfAKindFinder.swift */,
 				CC20033D1C76761100A53017 /* FourOfAKindFinder.swift */,
+				CC8686D21C78E24B008251DA /* SetFinder.swift */,
 			);
 			path = "Simle-Poker-Hands-2";
 			sourceTree = "<group>";
@@ -198,6 +202,7 @@
 				CC6632D41C73D917001C8C14 /* PairFinder.swift in Sources */,
 				CC20033E1C76761100A53017 /* FourOfAKindFinder.swift in Sources */,
 				CC20033B1C7674EB00A53017 /* ThreeOfAKindFinder.swift in Sources */,
+				CC8686D31C78E24B008251DA /* SetFinder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +216,7 @@
 				CC6632D51C73D917001C8C14 /* PairFinder.swift in Sources */,
 				CC20033F1C76761100A53017 /* FourOfAKindFinder.swift in Sources */,
 				CC20033C1C7674EB00A53017 /* ThreeOfAKindFinder.swift in Sources */,
+				CC8686D41C78E24B008251DA /* SetFinder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
