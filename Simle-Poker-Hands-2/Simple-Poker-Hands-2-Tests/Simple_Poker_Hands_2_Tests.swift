@@ -21,56 +21,104 @@ class Simple_Poker_Hands_2_Tests: XCTestCase {
     }
     
     func testHighCardHand_success() {
-        let cards = ["2C","4H","9D","QH","AD"]
+        let cards = [
+            Card(rank: CardRank.Two, suit: CardSuit.Clubs),
+            Card(rank: CardRank.Four, suit: CardSuit.Hearts),
+            Card(rank: CardRank.Nine, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Queen, suit: CardSuit.Hearts),
+            Card(rank: CardRank.Ace, suit: CardSuit.Diamonds),
+        ]
         
         let highCardFinder = HighCardFinder()
         XCTAssertTrue(highCardFinder.find(cards))
     }
     
     func testPairFinder_success() {
-        let cards = ["2C","2H","9D","QH","AD"]
+        let cards = [
+            Card(rank: CardRank.Two, suit: CardSuit.Clubs),
+            Card(rank: CardRank.Two, suit: CardSuit.Hearts),
+            Card(rank: CardRank.Nine, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Queen, suit: CardSuit.Hearts),
+            Card(rank: CardRank.Ace, suit: CardSuit.Diamonds),
+        ]
 
         let pairFinder = PairFinder()
         XCTAssertTrue(pairFinder.find(cards))
     }
     
     func testPairFinder_fail() {
-        let cards = ["2C","3H","9D","QH","AD"]
+        let cards = [
+            Card(rank: CardRank.Two, suit: CardSuit.Clubs),
+            Card(rank: CardRank.Four, suit: CardSuit.Hearts),
+            Card(rank: CardRank.Nine, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Queen, suit: CardSuit.Hearts),
+            Card(rank: CardRank.Ace, suit: CardSuit.Diamonds),
+        ]
         
         let pairFinder = PairFinder()
         XCTAssertFalse(pairFinder.find(cards))
     }
     
     func testThreeOfAKindFinder_success() {
-        let cards = ["2C","2H","2D","QH","AD"]
+        let cards = [
+            Card(rank: CardRank.Two, suit: CardSuit.Clubs),
+            Card(rank: CardRank.Two, suit: CardSuit.Hearts),
+            Card(rank: CardRank.Two, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Queen, suit: CardSuit.Hearts),
+            Card(rank: CardRank.Ace, suit: CardSuit.Diamonds),
+        ]
 
         let finder = ThreeOfAKindFinder()
         XCTAssertTrue(finder.find(cards))
     }
     
     func testThreeOfAKindFinder_fail() {
-        let cards = ["2C","5H","2D","QH","AD"]
+        let cards = [
+            Card(rank: CardRank.Two, suit: CardSuit.Clubs),
+            Card(rank: CardRank.Five, suit: CardSuit.Hearts),
+            Card(rank: CardRank.Two, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Queen, suit: CardSuit.Hearts),
+            Card(rank: CardRank.Ace, suit: CardSuit.Diamonds),
+        ]
         
         let finder = ThreeOfAKindFinder()
         XCTAssertFalse(finder.find(cards))
     }
     
     func testFourOfAKindFinder_success() {
-        let cards = ["2C","2H","2D","2S","AD"]
+        let cards = [
+            Card(rank: CardRank.Two, suit: CardSuit.Clubs),
+            Card(rank: CardRank.Two, suit: CardSuit.Hearts),
+            Card(rank: CardRank.Two, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Two, suit: CardSuit.Spades),
+            Card(rank: CardRank.Ace, suit: CardSuit.Diamonds),
+        ]
         
         let finder = FourOfAKindFinder()
         XCTAssertTrue(finder.find(cards))
     }
     
     func testFourOfAKindFinder_fail() {
-        let cards = ["2C","2H","2D","4S","AD"]
+        let cards = [
+            Card(rank: CardRank.Two, suit: CardSuit.Clubs),
+            Card(rank: CardRank.Two, suit: CardSuit.Hearts),
+            Card(rank: CardRank.Two, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Queen, suit: CardSuit.Hearts),
+            Card(rank: CardRank.Ace, suit: CardSuit.Diamonds),
+        ]
         
         let finder = FourOfAKindFinder()
         XCTAssertFalse(finder.find(cards))
     }
     
     func testTwoPairFinder_success() {
-        let cards = ["2C","2H","4D","4S","AD"]
+        let cards = [
+            Card(rank: CardRank.Two, suit: CardSuit.Clubs),
+            Card(rank: CardRank.Two, suit: CardSuit.Hearts),
+            Card(rank: CardRank.Four, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Four, suit: CardSuit.Hearts),
+            Card(rank: CardRank.Ace, suit: CardSuit.Diamonds),
+        ]
         
         let finder = TwoPairFinder()
         XCTAssertTrue(finder.find(cards))

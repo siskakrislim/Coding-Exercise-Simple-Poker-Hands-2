@@ -10,7 +10,7 @@ import Foundation
 
 class TwoPairFinder: CardFinder {
     
-    func find(cards:[String]) -> Bool {
+    func find(cards:[Card]) -> Bool {
         let finder = SetFinder()
         return finder.find(cards, length: length)
     }

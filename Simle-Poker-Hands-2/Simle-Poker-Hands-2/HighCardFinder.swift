@@ -10,7 +10,7 @@ import Foundation
 
 class HighCardFinder: CardFinder {
     
-    func find(cards:[String]) -> Bool {
+    func find(cards:[Card]) -> Bool {
         return true
     }
     

@@ -10,12 +10,12 @@ import Foundation
 
 class SetFinder {
     
-    func find(cards:[String], length:Int) -> Bool {
+    func find(cards:[Card], length:Int) -> Bool {
         
-        var filtered = [String]()
+        var filtered = [Card]()
         
         for card in cards {
-            filtered = cards.filter({ $0.characters.first == card.characters.first })
+            filtered = cards.filter({ $0.rank == card.rank })
             if (filtered.count == length) { return true }
         }
         
