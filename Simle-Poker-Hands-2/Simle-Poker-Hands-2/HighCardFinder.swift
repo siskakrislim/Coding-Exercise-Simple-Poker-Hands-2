@@ -14,4 +14,10 @@ class HighCardFinder: CardFinder {
         return true
     }
     
+    var length:Int {
+        get {
+            return 1
+        }
+    }
+    
 }

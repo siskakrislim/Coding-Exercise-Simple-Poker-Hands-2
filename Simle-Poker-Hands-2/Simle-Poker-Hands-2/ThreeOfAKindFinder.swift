@@ -13,7 +13,6 @@ class ThreeOfAKindFinder {
     func find(cards:[String]) -> Bool {
         
         var filtered = [String]()
-        let length = 3
         
         for card in cards {
             filtered = cards.filter({ $0.characters.first == card.characters.first })
@@ -21,6 +20,12 @@ class ThreeOfAKindFinder {
         }
         
         return false
+    }
+    
+    var length:Int {
+        get {
+            return 3
+        }
     }
     
 }

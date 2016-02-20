@@ -13,7 +13,6 @@ class PairFinder: CardFinder{
     func find(cards:[String]) -> Bool {
         
         var filtered = [String]()
-        let length = 2
         
         for card in cards {
             filtered = cards.filter({ $0.characters.first == card.characters.first })
@@ -21,6 +20,12 @@ class PairFinder: CardFinder{
         }
         
         return false
+    }
+    
+    var length:Int {
+        get {
+            return 2
+        }
     }
     
 }

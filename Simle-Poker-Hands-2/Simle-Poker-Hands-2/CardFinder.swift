@@ -10,4 +10,5 @@ import Foundation
 
 protocol CardFinder {
     func find(cards:[String]) -> Bool
+    var length:Int { get }
 }
