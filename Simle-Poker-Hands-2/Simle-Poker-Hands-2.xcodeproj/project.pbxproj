@@ -91,14 +91,9 @@
 		CC4B55B51C67BCAC005ACCB8 /* Simle-Poker-Hands-2 */ = {
 			isa = PBXGroup;
 			children = (
+				CC8686D91C78ED65008251DA /* finder */,
+				CC8686D81C78ED5E008251DA /* card */,
 				CC4B55B61C67BCAC005ACCB8 /* main.swift */,
-				CC6632D01C73D414001C8C14 /* HighCardFinder.swift */,
-				CC6632D31C73D917001C8C14 /* PairFinder.swift */,
-				CC6632D61C73D962001C8C14 /* CardFinder.swift */,
-				CC20033A1C7674EB00A53017 /* ThreeOfAKindFinder.swift */,
-				CC20033D1C76761100A53017 /* FourOfAKindFinder.swift */,
-				CC8686D21C78E24B008251DA /* SetFinder.swift */,
-				CC8686D51C78E989008251DA /* TwoPairFinder.swift */,
 			);
 			path = "Simle-Poker-Hands-2";
 			sourceTree = "<group>";
@@ -110,6 +105,27 @@
 				CC6632CC1C73D119001C8C14 /* Info.plist */,
 			);
 			path = "Simple-Poker-Hands-2-Tests";
+			sourceTree = "<group>";
+		};
+		CC8686D81C78ED5E008251DA /* card */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = card;
+			sourceTree = "<group>";
+		};
+		CC8686D91C78ED65008251DA /* finder */ = {
+			isa = PBXGroup;
+			children = (
+				CC6632D01C73D414001C8C14 /* HighCardFinder.swift */,
+				CC6632D31C73D917001C8C14 /* PairFinder.swift */,
+				CC6632D61C73D962001C8C14 /* CardFinder.swift */,
+				CC20033A1C7674EB00A53017 /* ThreeOfAKindFinder.swift */,
+				CC20033D1C76761100A53017 /* FourOfAKindFinder.swift */,
+				CC8686D21C78E24B008251DA /* SetFinder.swift */,
+				CC8686D51C78E989008251DA /* TwoPairFinder.swift */,
+			);
+			name = finder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
