@@ -123,4 +123,17 @@ class Simple_Poker_Hands_2_Tests: XCTestCase {
         let finder = TwoPairFinder()
         XCTAssertTrue(finder.find(cards))
     }
+    
+    func testTwoPairFinder_fail() {
+        let cards = [
+            Card(rank: CardRank.Two, suit: CardSuit.Clubs),
+            Card(rank: CardRank.Two, suit: CardSuit.Hearts),
+            Card(rank: CardRank.Four, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Four, suit: CardSuit.Hearts),
+            Card(rank: CardRank.Four, suit: CardSuit.Diamonds),
+        ]
+        
+        let finder = TwoPairFinder()
+        XCTAssertFalse(finder.find(cards))
+    }
 }

@@ -12,8 +12,14 @@ class TwoPairFinder: CardFinder {
     
     func find(cards:[Card]) -> Bool {
         let finder = SetFinder()
-        let finding = finder.find(cards, length: length)
-        return finding.found.count == length
+        
+        //looking for the first pair
+        let firstFinding = finder.find(cards, length: length)
+        
+        //looking for the second pair
+        let secondFinding = finder.find(firstFinding.rest, length: length)
+        
+        return firstFinding.found.count == length && secondFinding.found.count == length
     }
     
     var length:Int {
