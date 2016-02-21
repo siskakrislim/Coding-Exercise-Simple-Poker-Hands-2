@@ -12,7 +12,8 @@ class ThreeOfAKindFinder: CardFinder {
     
     func find(cards:[Card]) -> Bool {
         let finder = SetFinder()
-        return finder.find(cards, length: length)
+        let finding = finder.find(cards, length: length)
+        return finding.found.count == length
     }
     
     var length:Int {
