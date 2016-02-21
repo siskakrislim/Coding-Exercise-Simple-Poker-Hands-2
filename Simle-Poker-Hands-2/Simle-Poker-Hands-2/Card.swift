@@ -12,7 +12,7 @@ enum CardSuit {
     case Clubs, Spades, Hearts, Diamonds
 }
 
-enum CardRank {
+enum CardRank: Int {
     case Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King, Ace
 }
 
