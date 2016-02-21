@@ -136,4 +136,56 @@ class Simple_Poker_Hands_2_Tests: XCTestCase {
         let finder = TwoPairFinder()
         XCTAssertFalse(finder.find(cards))
     }
+    
+    func testFullHouseFinder_success() {
+        let cards = [
+            Card(rank: CardRank.Two, suit: CardSuit.Clubs),
+            Card(rank: CardRank.Two, suit: CardSuit.Hearts),
+            Card(rank: CardRank.Four, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Four, suit: CardSuit.Hearts),
+            Card(rank: CardRank.Four, suit: CardSuit.Diamonds),
+        ]
+        
+        let finder = FullHouseFinder()
+        XCTAssertTrue(finder.find(cards))
+    }
+    
+    func testFullHouseFinderUnordered_success() {
+        let cards = [
+            Card(rank: CardRank.Four, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Two, suit: CardSuit.Clubs),
+            Card(rank: CardRank.Two, suit: CardSuit.Hearts),
+            Card(rank: CardRank.Four, suit: CardSuit.Hearts),
+            Card(rank: CardRank.Four, suit: CardSuit.Diamonds),
+        ]
+        
+        let finder = FullHouseFinder()
+        XCTAssertTrue(finder.find(cards))
+    }
+    
+    func testFullHouseFinderUnordered2_success() {
+        let cards = [
+            Card(rank: CardRank.Four, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Four, suit: CardSuit.Clubs),
+            Card(rank: CardRank.Two, suit: CardSuit.Hearts),
+            Card(rank: CardRank.Four, suit: CardSuit.Hearts),
+            Card(rank: CardRank.Two, suit: CardSuit.Diamonds),
+        ]
+        
+        let finder = FullHouseFinder()
+        XCTAssertTrue(finder.find(cards))
+    }
+    
+    func testFullHouseFinder_fail() {
+        let cards = [
+            Card(rank: CardRank.Two, suit: CardSuit.Clubs),
+            Card(rank: CardRank.Two, suit: CardSuit.Hearts),
+            Card(rank: CardRank.Four, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Four, suit: CardSuit.Hearts),
+            Card(rank: CardRank.Three, suit: CardSuit.Diamonds),
+        ]
+        
+        let finder = FullHouseFinder()
+        XCTAssertFalse(finder.find(cards))
+    }
 }
