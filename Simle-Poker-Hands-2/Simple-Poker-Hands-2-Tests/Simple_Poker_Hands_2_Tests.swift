@@ -280,4 +280,22 @@ class Simple_Poker_Hands_2_Tests: XCTestCase {
         XCTAssertFalse(finder.find(cards))
     }
     
+    func testCardProcessor_success() {
+        let cards = [
+            Card(rank: CardRank.Four, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Five, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Six, suit: CardSuit.Clubs),
+            Card(rank: CardRank.Seven, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Eight, suit: CardSuit.Diamonds),
+        ]
+        
+        let cardProcessor = PokerCardProcessor()
+        XCTAssertTrue(cardProcessor.findHand(cards).count > 0)
+    }
+    
+    func testHandEnumReturningProperHand() {
+        let finder = PokerHands.Flush.getFinder()
+        XCTAssertNotNil(finder)
+    }
+    
 }

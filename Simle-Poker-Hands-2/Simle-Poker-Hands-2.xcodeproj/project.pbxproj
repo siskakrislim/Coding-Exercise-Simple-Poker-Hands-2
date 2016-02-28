@@ -35,6 +35,12 @@
 		CCDB94341C833501001F0804 /* FlushFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDB94321C833501001F0804 /* FlushFinder.swift */; };
 		CCDB94361C833B60001F0804 /* StraightFlushFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDB94351C833B60001F0804 /* StraightFlushFinder.swift */; };
 		CCDB94371C833B60001F0804 /* StraightFlushFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDB94351C833B60001F0804 /* StraightFlushFinder.swift */; };
+		CCDB94391C83558C001F0804 /* CardProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDB94381C83558C001F0804 /* CardProcessor.swift */; };
+		CCDB943A1C83558C001F0804 /* CardProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDB94381C83558C001F0804 /* CardProcessor.swift */; };
+		CCDB943C1C83560C001F0804 /* PokerCardProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDB943B1C83560C001F0804 /* PokerCardProcessor.swift */; };
+		CCDB943D1C83560C001F0804 /* PokerCardProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDB943B1C83560C001F0804 /* PokerCardProcessor.swift */; };
+		CCDB943F1C835E64001F0804 /* PokerHands.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDB943E1C835E64001F0804 /* PokerHands.swift */; };
+		CCDB94401C835E64001F0804 /* PokerHands.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDB943E1C835E64001F0804 /* PokerHands.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,6 +74,9 @@
 		CC8686DA1C78EE07008251DA /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		CCDB94321C833501001F0804 /* FlushFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlushFinder.swift; sourceTree = "<group>"; };
 		CCDB94351C833B60001F0804 /* StraightFlushFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StraightFlushFinder.swift; sourceTree = "<group>"; };
+		CCDB94381C83558C001F0804 /* CardProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardProcessor.swift; sourceTree = "<group>"; };
+		CCDB943B1C83560C001F0804 /* PokerCardProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokerCardProcessor.swift; sourceTree = "<group>"; };
+		CCDB943E1C835E64001F0804 /* PokerHands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokerHands.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +148,9 @@
 			isa = PBXGroup;
 			children = (
 				CC8686DA1C78EE07008251DA /* Card.swift */,
+				CCDB94381C83558C001F0804 /* CardProcessor.swift */,
+				CCDB943B1C83560C001F0804 /* PokerCardProcessor.swift */,
+				CCDB943E1C835E64001F0804 /* PokerHands.swift */,
 			);
 			name = card;
 			sourceTree = "<group>";
@@ -250,17 +262,20 @@
 			files = (
 				CCDB94331C833501001F0804 /* FlushFinder.swift in Sources */,
 				CC496FA31C7A42060015472F /* SequenceValidator.swift in Sources */,
+				CCDB943F1C835E64001F0804 /* PokerHands.swift in Sources */,
 				CC496FA01C7A3E150015472F /* StraightFinder.swift in Sources */,
 				CC4B55B71C67BCAC005ACCB8 /* main.swift in Sources */,
 				CC8686DB1C78EE07008251DA /* Card.swift in Sources */,
 				CC6632D71C73D962001C8C14 /* CardFinder.swift in Sources */,
 				CC496F9D1C7A11880015472F /* FullHouseFinder.swift in Sources */,
 				CC6632D11C73D414001C8C14 /* HighCardFinder.swift in Sources */,
+				CCDB94391C83558C001F0804 /* CardProcessor.swift in Sources */,
 				CC6632D41C73D917001C8C14 /* PairFinder.swift in Sources */,
 				CC8686D61C78E989008251DA /* TwoPairFinder.swift in Sources */,
 				CCDB94361C833B60001F0804 /* StraightFlushFinder.swift in Sources */,
 				CC20033E1C76761100A53017 /* FourOfAKindFinder.swift in Sources */,
 				CC20033B1C7674EB00A53017 /* ThreeOfAKindFinder.swift in Sources */,
+				CCDB943C1C83560C001F0804 /* PokerCardProcessor.swift in Sources */,
 				CC8686D31C78E24B008251DA /* SetValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,17 +286,20 @@
 			files = (
 				CCDB94341C833501001F0804 /* FlushFinder.swift in Sources */,
 				CC496FA41C7A42060015472F /* SequenceValidator.swift in Sources */,
+				CCDB94401C835E64001F0804 /* PokerHands.swift in Sources */,
 				CC496FA11C7A3E150015472F /* StraightFinder.swift in Sources */,
 				CC6632CB1C73D119001C8C14 /* Simple_Poker_Hands_2_Tests.swift in Sources */,
 				CC8686DC1C78EE07008251DA /* Card.swift in Sources */,
 				CC6632D81C73D962001C8C14 /* CardFinder.swift in Sources */,
 				CC496F9E1C7A11880015472F /* FullHouseFinder.swift in Sources */,
 				CC6632D21C73D414001C8C14 /* HighCardFinder.swift in Sources */,
+				CCDB943A1C83558C001F0804 /* CardProcessor.swift in Sources */,
 				CC6632D51C73D917001C8C14 /* PairFinder.swift in Sources */,
 				CC8686D71C78E989008251DA /* TwoPairFinder.swift in Sources */,
 				CCDB94371C833B60001F0804 /* StraightFlushFinder.swift in Sources */,
 				CC20033F1C76761100A53017 /* FourOfAKindFinder.swift in Sources */,
 				CC20033C1C7674EB00A53017 /* ThreeOfAKindFinder.swift in Sources */,
+				CCDB943D1C83560C001F0804 /* PokerCardProcessor.swift in Sources */,
 				CC8686D41C78E24B008251DA /* SetValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
