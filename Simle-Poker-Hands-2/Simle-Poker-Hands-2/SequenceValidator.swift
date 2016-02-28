@@ -8,9 +8,9 @@
 
 import Foundation
 
-class SequenceValidator {
+class SequenceValidator: Validator {
     
-    func find(cards:[Card], length:Int) -> (found:[Card], rest:[Card])  {
+    func find(cards:[Card], length:Int, sameSuit:Bool = false) -> (found:[Card], rest:[Card])  {
         
         var filtered = [Card]()
         let rest = [Card]()

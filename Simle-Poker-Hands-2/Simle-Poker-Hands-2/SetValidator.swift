@@ -8,10 +8,7 @@
 
 import Foundation
 
-class SetValidator {
-    
-    //let rankComparator = { $0.rank == card.rank }
-    //let suitComparator = { $0.suit == card.rank }
+class SetValidator: Validator {
     
     func find(cards:[Card], length:Int, sameSuit:Bool = false) -> (found:[Card], rest:[Card])  {
         
