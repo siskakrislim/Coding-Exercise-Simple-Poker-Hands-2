@@ -228,4 +228,43 @@ class Simple_Poker_Hands_2_Tests: XCTestCase {
         XCTAssertFalse(finder.find(cards))
     }
     
+    func testFlushFinder_success() {
+        let cards = [
+            Card(rank: CardRank.Four, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Eight, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Queen, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Seven, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Eight, suit: CardSuit.Diamonds),
+        ]
+        
+        let finder = FlushFinder()
+        XCTAssertTrue(finder.find(cards))
+    }
+    
+    func testFlushFinder_failure() {
+        let cards = [
+            Card(rank: CardRank.Four, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Eight, suit: CardSuit.Clubs),
+            Card(rank: CardRank.Queen, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Seven, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Eight, suit: CardSuit.Diamonds),
+        ]
+        
+        let finder = FlushFinder()
+        XCTAssertFalse(finder.find(cards))
+    }
+    
+    func testStraightFlushFinder_success() {
+        let cards = [
+            Card(rank: CardRank.Four, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Five, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Six, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Seven, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Eight, suit: CardSuit.Diamonds),
+        ]
+        
+        let finder = StraightFlushFinder()
+        XCTAssertTrue(finder.find(cards))
+    }
+    
 }

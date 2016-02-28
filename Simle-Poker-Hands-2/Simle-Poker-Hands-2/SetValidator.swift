@@ -10,14 +10,24 @@ import Foundation
 
 class SetValidator {
     
-    func find(cards:[Card], length:Int) -> (found:[Card], rest:[Card])  {
+    //let rankComparator = { $0.rank == card.rank }
+    //let suitComparator = { $0.suit == card.rank }
+    
+    func find(cards:[Card], length:Int, sameSuit:Bool = false) -> (found:[Card], rest:[Card])  {
         
         var count = 0
         var filtered = [Card]()
         var rest = [Card]()
         
         for card in cards {
-            filtered = cards.filter({ $0.rank == card.rank })
+            
+            if (sameSuit) {
+                filtered = cards.filter({ $0.suit == card.suit })
+            }
+            else {
+                filtered = cards.filter({ $0.rank == card.rank })
+            }
+            
             count = filtered.count
             if (count == length) { break }
         }
