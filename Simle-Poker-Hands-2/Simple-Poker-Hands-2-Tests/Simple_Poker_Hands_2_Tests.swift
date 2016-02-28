@@ -202,6 +202,19 @@ class Simple_Poker_Hands_2_Tests: XCTestCase {
         XCTAssertTrue(finder.find(cards))
     }
     
+    func testStraightFinder_success2() {
+        let cards = [
+            Card(rank: CardRank.Four, suit: CardSuit.Diamonds),
+            Card(rank: CardRank.Eight, suit: CardSuit.Clubs),
+            Card(rank: CardRank.Six, suit: CardSuit.Hearts),
+            Card(rank: CardRank.Seven, suit: CardSuit.Hearts),
+            Card(rank: CardRank.Five, suit: CardSuit.Diamonds),
+        ]
+        
+        let finder = StraightFinder()
+        XCTAssertTrue(finder.find(cards))
+    }
+    
     func testStraightFinder__fail() {
         let cards = [
             Card(rank: CardRank.Two, suit: CardSuit.Clubs),
