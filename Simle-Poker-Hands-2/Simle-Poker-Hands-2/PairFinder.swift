@@ -11,7 +11,7 @@ import Foundation
 class PairFinder: CardFinder{
     
     func find(cards:[Card]) -> Bool {
-        let finder = SetFinder()
+        let finder = SetValidator()
         let finding = finder.find(cards, length: length)
         return finding.found.count == length
     }

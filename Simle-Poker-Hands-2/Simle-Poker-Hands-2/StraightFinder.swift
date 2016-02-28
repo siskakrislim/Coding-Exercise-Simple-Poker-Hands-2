@@ -11,7 +11,7 @@ import Foundation
 class StraightFinder: CardFinder {
     
     func find(cards:[Card]) -> Bool {
-        let finder = SequenceFinder()
+        let finder = SequenceValidator()
         let finding = finder.find(cards, length: length)
         return finding.found.count == length
     }

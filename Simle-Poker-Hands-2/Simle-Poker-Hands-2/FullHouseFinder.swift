@@ -11,7 +11,7 @@ import Foundation
 class FullHouseFinder: CardFinder {
     
     func find(cards:[Card]) -> Bool {
-        let finder = SetFinder()        
+        let finder = SetValidator()        
         let firstFinding = finder.find(cards, length: 3)
         let secondFinding = finder.find(firstFinding.rest, length: length)
         

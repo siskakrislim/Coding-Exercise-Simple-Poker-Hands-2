@@ -11,7 +11,7 @@ import Foundation
 class TwoPairFinder: CardFinder {
     
     func find(cards:[Card]) -> Bool {
-        let finder = SetFinder()
+        let finder = SetValidator()
         
         //looking for the first pair
         let firstFinding = finder.find(cards, length: length)

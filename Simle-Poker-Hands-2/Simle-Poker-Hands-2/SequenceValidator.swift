@@ -8,20 +8,23 @@
 
 import Foundation
 
-class SequenceFinder {
+class SequenceValidator {
     
     func find(cards:[Card], length:Int) -> (found:[Card], rest:[Card])  {
         
         var filtered = [Card]()
         let rest = [Card]()
         
+        let sortedCards = cards.sort({ $0.rank.rawValue < $1.rank.rawValue })
+        
         var currentVal = cards.first!.rank.rawValue
         var nextVal = 0
         var isSequence = false
-        for var i = 0; i < cards.count; i++
+        
+        for var i = 0; i < sortedCards.count; i++
         {
-            if(i < cards.count - 1) {
-                nextVal = cards[i+1].rank.rawValue
+            if(i < sortedCards.count - 1) {
+                nextVal = sortedCards[i+1].rank.rawValue
                 
                 if(nextVal == currentVal + 1) {
                     isSequence = true;
@@ -38,7 +41,7 @@ class SequenceFinder {
         }
         
         if(isSequence){
-            filtered = cards
+            filtered = sortedCards
         }
         
         return (filtered, rest)

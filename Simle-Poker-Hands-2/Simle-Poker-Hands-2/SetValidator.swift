@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SetFinder {
+class SetValidator {
     
     func find(cards:[Card], length:Int) -> (found:[Card], rest:[Card])  {
         
