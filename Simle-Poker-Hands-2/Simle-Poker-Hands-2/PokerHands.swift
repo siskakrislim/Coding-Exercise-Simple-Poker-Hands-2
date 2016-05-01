@@ -14,7 +14,7 @@ enum PokerHands: Int, CustomStringConvertible {
     //needed for looping over enums since there is no default functionality for it
     static func enumerate() -> AnyGenerator<PokerHands> {
         var nextIndex = HighCard.rawValue
-        return anyGenerator { PokerHands(rawValue: nextIndex++) }
+        return AnyGenerator { PokerHands(rawValue: nextIndex++) }
     }
     
     func getFinder() -> CardFinder {

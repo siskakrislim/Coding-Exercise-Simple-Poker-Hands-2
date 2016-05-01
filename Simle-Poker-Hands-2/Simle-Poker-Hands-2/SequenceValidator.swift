@@ -21,7 +21,7 @@ class SequenceValidator: Validator {
         var nextVal = 0
         var isSequence = false
         
-        for var i = 0; i < sortedCards.count; i++
+        for i in 0 ..< sortedCards.count
         {
             if(i < sortedCards.count - 1) {
                 nextVal = sortedCards[i+1].rank.rawValue
